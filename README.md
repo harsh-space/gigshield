@@ -1,4 +1,4 @@
-# Coverent
+# Coverent ![Hackathon Project](https://img.shields.io/badge/type-Hackathon%20Project-orange)
 ## Parametric Income Insurance for Q-Commerce Riders
 
 **Live Demo Links:**
@@ -82,6 +82,8 @@ The insurer-side user monitors live triggers, reviews flagged claims, and tracks
 
 <p align="center">
   <img src="docs/appflowchart.png" width="300" alt="Application Workflow"/>
+  <br/>
+  <em>Figure 1: Coverent application workflow — rider PWA onboarding through insurer dashboard payout audit</em>
 </p>
 
 ### Rider PWA (6 Steps)
@@ -109,13 +111,42 @@ Amount calculated → sent to UPI → push notification to rider. Target: within
 
 ### Insurer Web Dashboard
 
-| View | What It Shows |
-|---|---|
-| Live Trigger Map | Active events (Rain/Heat/AQI) with zone overlays. |
-| Claims/Payouts Queue | Audit log of all auto-approved payouts with fraud details. |
-| Analytics Dashboard | Loss ratio, zone-wise claims, and fund disbursement. |
-| Mock Trigger Dispatch | Manual simulation for demo triggers and stress tests. |
-| Policy Management | Active policies, tier distribution, and pool limits. |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">View</th>
+      <th style="padding: 10px;">What It Shows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Live Trigger Map</td>
+      <td style="padding: 10px;">Active events (Rain/Heat/AQI) with zone overlays.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Claims/Payouts Queue</td>
+      <td style="padding: 10px;">Audit log of all auto-approved payouts with fraud details.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Analytics Dashboard</td>
+      <td style="padding: 10px;">Loss ratio, zone-wise claims, and fund disbursement.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Mock Trigger Dispatch</td>
+      <td style="padding: 10px;">Manual simulation for demo triggers and stress tests.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Policy Management</td>
+      <td style="padding: 10px;">Active policies, tier distribution, and pool limits.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 1. Insurer web dashboard views and contents.</b></p>
+
+</div>
 
 ---
 
@@ -127,11 +158,42 @@ Amount calculated → sent to UPI → push notification to rider. Target: within
 
 ### Income Tiers
 
-| Tier | Weekly Earnings | Monthly Equivalent | Profile |
-|---|---|---|---|
-| Low | ₹3,000–₹4,200 | ₹12,000–₹15,000 | Part-time / Tier-2 city |
-| Mid | ₹4,800–₹6,000 | ₹25,000–₹30,000 | Full-time / Metro |
-| High | ₹6,600–₹7,200 | ₹30,000–₹40,000 | High-performer / Metro |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Tier</th>
+      <th style="padding: 10px;">Weekly Earnings</th>
+      <th style="padding: 10px;">Monthly Equivalent</th>
+      <th style="padding: 10px;">Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Low</td>
+      <td style="padding: 10px;">₹3,000–₹4,200</td>
+      <td style="padding: 10px;">₹12,000–₹15,000</td>
+      <td style="padding: 10px;">Part-time / Tier-2 city</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Mid</td>
+      <td style="padding: 10px;">₹4,800–₹6,000</td>
+      <td style="padding: 10px;">₹25,000–₹30,000</td>
+      <td style="padding: 10px;">Full-time / Metro</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">High</td>
+      <td style="padding: 10px;">₹6,600–₹7,200</td>
+      <td style="padding: 10px;">₹30,000–₹40,000</td>
+      <td style="padding: 10px;">High-performer / Metro</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 2. Rider income tiers — weekly earnings and profile.</b></p>
+
+</div>
 
 *Source: Blinkit/Zepto official partner earnings data, Invezz gig worker survey 2025*
 
@@ -143,33 +205,122 @@ Weekly Premium = (Base Premium + AI Risk Loading) × Plan Multiplier
 
 **Base Premium — 2.5% of weekly income (parametric microinsurance benchmark)**
 
-| Tier | Base Premium |
-|---|---|
-| Low | ₹89/week |
-| Mid | ₹139/week |
-| High | ₹179/week |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Tier</th>
+      <th style="padding: 10px;">Base Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Low</td>
+      <td style="padding: 10px;">₹89/week</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Mid</td>
+      <td style="padding: 10px;">₹139/week</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">High</td>
+      <td style="padding: 10px;">₹179/week</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 3. Base premium by income tier.</b></p>
+
+</div>
 
 **AI Risk Loading — XGBoost model, range: -₹20 to +₹30**
 Calculated at onboarding based on zone history. Neutral score = 74.
 
-| Input Feature | Source | Weight |
-|---|---|---|
-| 3-year waterlogging frequency (pincode) | IMD historical | High |
-| Seasonal AQI severity score | CPCB / AQICN historical | High |
-| City tier (metro / Tier-2 / Tier-3) | Registration data | Medium |
-| Dark store zone composite risk score | City flood + OSM maps | Medium |
-| Rider's active shift window | Platform API (simulated) | Low |
-| Rider's prior claim count | Internal DB | Low |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Input Feature</th>
+      <th style="padding: 10px;">Source</th>
+      <th style="padding: 10px;">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">3-year waterlogging frequency (pincode)</td>
+      <td style="padding: 10px;">IMD historical</td>
+      <td style="padding: 10px;">High</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Seasonal AQI severity score</td>
+      <td style="padding: 10px;">CPCB / AQICN historical</td>
+      <td style="padding: 10px;">High</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">City tier (metro / Tier-2 / Tier-3)</td>
+      <td style="padding: 10px;">Registration data</td>
+      <td style="padding: 10px;">Medium</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Dark store zone composite risk score</td>
+      <td style="padding: 10px;">City flood + OSM maps</td>
+      <td style="padding: 10px;">Medium</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Rider's active shift window</td>
+      <td style="padding: 10px;">Platform API (simulated)</td>
+      <td style="padding: 10px;">Low</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Rider's prior claim count</td>
+      <td style="padding: 10px;">Internal DB</td>
+      <td style="padding: 10px;">Low</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 4. AI risk loading — input features and weights.</b></p>
+
+</div>
 
 *Example: Mid-tier rider in Rohini, Delhi pays ₹169/week. Same tier in Kharadi, Pune pays ₹119/week.*
 
 ### Coverage Plans (Mid-Tier Benchmark)
 
-| Plan | Max Covered Days/Week | Max Payout/Week |
-|---|---|---|
-| Suraksha Lite | 1 day | ₹630 |
-| Suraksha Plus | 2 days | ₹1,260 |
-| Suraksha Max | 3 days | ₹1,890 |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Plan</th>
+      <th style="padding: 10px;">Max Covered Days/Week</th>
+      <th style="padding: 10px;">Max Payout/Week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Suraksha Lite</td>
+      <td style="padding: 10px;">1 day</td>
+      <td style="padding: 10px;">₹630</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Suraksha Plus</td>
+      <td style="padding: 10px;">2 days</td>
+      <td style="padding: 10px;">₹1,260</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Suraksha Max</td>
+      <td style="padding: 10px;">3 days</td>
+      <td style="padding: 10px;">₹1,890</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 5. Coverage plans — Mid-tier benchmark.</b></p>
+
+</div>
 
 ### Payout Formula
 
@@ -201,13 +352,61 @@ The 0.70 factor prevents over-insurance moral hazard.
 
 Five triggers. All objective, all API-verifiable, all tied directly to income loss within a rider's 2km zone. Trigger fires → payout initiates. No claim filing.
 
-| # | Trigger | Exact Threshold | Income Loss Mechanism | Data Source |
-|---|---|---|---|---|
-| 1 | Hyperlocal Waterlogging | IMD Red Alert (≥64.5mm/day) AND ≥1 road within 2km of dark store flooded | Zone completion collapses; rider cannot operate | OpenWeatherMap + Google Maps |
-| 2 | Extreme Heat | IMD Heat Wave (≥45°C) AND platform completion rate <40% for ≥2 hrs | Riders log off; cannot sustain peak delivery pace | OpenWeatherMap + Simulated platform API |
-| 3 | Severe AQI | CPCB AQI ≥301 in rider's pincode for ≥3 consecutive hours during shift | Respiratory stress forces early log-off; 6–10 delivery cycles lost | AQICN API |
-| 4 | Zone / Market Closure | Municipal/police order closing dark store zone or delivery zone | Dark store shuts; riders cannot enter/exit zone | Simulated municipal alert API |
-| 5 | Platform Outage | Order-assignment system down ≥45 mins during 6–10 PM peak | Rider active but receives zero orders; peak = ~40% of daily earnings | Simulated platform status API |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">#</th>
+      <th style="padding: 10px;">Trigger</th>
+      <th style="padding: 10px;">Exact Threshold</th>
+      <th style="padding: 10px;">Income Loss Mechanism</th>
+      <th style="padding: 10px;">Data Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">1</td>
+      <td style="padding: 10px;">Hyperlocal Waterlogging</td>
+      <td style="padding: 10px;">IMD Red Alert (≥64.5mm/day) AND ≥1 road within 2km of dark store flooded</td>
+      <td style="padding: 10px;">Zone completion collapses; rider cannot operate</td>
+      <td style="padding: 10px;">OpenWeatherMap + Google Maps</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">2</td>
+      <td style="padding: 10px;">Extreme Heat</td>
+      <td style="padding: 10px;">IMD Heat Wave (≥45°C) AND platform completion rate &lt;40% for ≥2 hrs</td>
+      <td style="padding: 10px;">Riders log off; cannot sustain peak delivery pace</td>
+      <td style="padding: 10px;">OpenWeatherMap + Simulated platform API</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">3</td>
+      <td style="padding: 10px;">Severe AQI</td>
+      <td style="padding: 10px;">CPCB AQI ≥301 in rider's pincode for ≥3 consecutive hours during shift</td>
+      <td style="padding: 10px;">Respiratory stress forces early log-off; 6–10 delivery cycles lost</td>
+      <td style="padding: 10px;">AQICN API</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">4</td>
+      <td style="padding: 10px;">Zone / Market Closure</td>
+      <td style="padding: 10px;">Municipal/police order closing dark store zone or delivery zone</td>
+      <td style="padding: 10px;">Dark store shuts; riders cannot enter/exit zone</td>
+      <td style="padding: 10px;">Simulated municipal alert API</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">5</td>
+      <td style="padding: 10px;">Platform Outage</td>
+      <td style="padding: 10px;">Order-assignment system down ≥45 mins during 6–10 PM peak</td>
+      <td style="padding: 10px;">Rider active but receives zero orders; peak = ~40% of daily earnings</td>
+      <td style="padding: 10px;">Simulated platform status API</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 6. Parametric triggers, thresholds, and data sources.</b></p>
+
+</div>
+
 ---
 
 ## AI/ML Integration Plan
@@ -245,13 +444,42 @@ The engine uses an `XGBRegressor` with a `reg:squarederror` objective to predict
 **Job:** Validate every auto-triggered claim before payout releases. CLEAR → instant payout. FLAG → manual review.
 **Algorithm:** Isolation Forest (unsupervised anomaly detection) — requires no labeled fraud data at launch. Learns normal claim behavior and flags deviations.
 
-| Check | Flag Condition |
-|---|---|
-| GPS zone validation | Last ping outside 2km of registered dark store |
-| Activity validation | Rider logged off >30 min before trigger fired |
-| Duplicate claim check | Same trigger type claimed twice in 7-day window |
-| Velocity anomaly | GPS jump >5km in <3 minutes |
-| Historical pattern check | Claim in zone with no prior disruption history for this trigger |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Check</th>
+      <th style="padding: 10px;">Flag Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">GPS zone validation</td>
+      <td style="padding: 10px;">Last ping outside 2km of registered dark store</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Activity validation</td>
+      <td style="padding: 10px;">Rider logged off &gt;30 min before trigger fired</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Duplicate claim check</td>
+      <td style="padding: 10px;">Same trigger type claimed twice in 7-day window</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Velocity anomaly</td>
+      <td style="padding: 10px;">GPS jump &gt;5km in &lt;3 minutes</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Historical pattern check</td>
+      <td style="padding: 10px;">Claim in zone with no prior disruption history for this trigger</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 7. Fraud detection checks and flag conditions.</b></p>
+
+</div>
 
 **Output:** CLEAR or FLAG (review target: 4 hours).
 
@@ -282,13 +510,48 @@ The engine uses an `XGBRegressor` with a `reg:squarederror` objective to predict
 A real stranded rider leaves a physical trail a spoofing app
 cannot replicate. Isolation Forest cross-checks 5 signals:
 
-| Signal | Genuine Worker | Spoofer |
-|---|---|---|
-| Location history | Gradual movement toward dark store, then stops | Teleports into zone at trigger time |
-| Accelerometer + battery | Shows bike motion, normal drain | Flat — stationary device |
-| Platform activity | Online and accepting orders before trigger | Login spike exactly at trigger, no prior activity |
-| Cell tower vs GPS | Tower pings match dark store vicinity | Tower pings contradict GPS coordinates |
-| Zone order history | 4-week delivery pattern in this zone | No prior history in this zone |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Signal</th>
+      <th style="padding: 10px;">Genuine Worker</th>
+      <th style="padding: 10px;">Spoofer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Location history</td>
+      <td style="padding: 10px;">Gradual movement toward dark store, then stops</td>
+      <td style="padding: 10px;">Teleports into zone at trigger time</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Accelerometer + battery</td>
+      <td style="padding: 10px;">Shows bike motion, normal drain</td>
+      <td style="padding: 10px;">Flat — stationary device</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Platform activity</td>
+      <td style="padding: 10px;">Online and accepting orders before trigger</td>
+      <td style="padding: 10px;">Login spike exactly at trigger, no prior activity</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Cell tower vs GPS</td>
+      <td style="padding: 10px;">Tower pings match dark store vicinity</td>
+      <td style="padding: 10px;">Tower pings contradict GPS coordinates</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Zone order history</td>
+      <td style="padding: 10px;">4-week delivery pattern in this zone</td>
+      <td style="padding: 10px;">No prior history in this zone</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 8. Genuine-worker vs. spoofer signal comparison.</b></p>
+
+</div>
 
 **Flag condition:** Any 2 of 5 signals contradict GPS claim →
 held for review. All 5 consistent → auto-approved.
@@ -328,41 +591,157 @@ A rider with a genuine network drop should never lose their payout.
 
 ### Defense Summary
 
-| Attack | Defense |
-|---|---|
-| Solo GPS spoof | 5-signal Isolation Forest check |
-| Ring of 500 claiming at once | Claim velocity + active-rider ratio |
-| Coordinated spoofing app | Cross-zone fingerprint detection |
-| Honest rider with network drop | 4-signal fallback + grace hold |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Attack</th>
+      <th style="padding: 10px;">Defense</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Solo GPS spoof</td>
+      <td style="padding: 10px;">5-signal Isolation Forest check</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Ring of 500 claiming at once</td>
+      <td style="padding: 10px;">Claim velocity + active-rider ratio</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Coordinated spoofing app</td>
+      <td style="padding: 10px;">Cross-zone fingerprint detection</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Honest rider with network drop</td>
+      <td style="padding: 10px;">4-signal fallback + grace hold</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 9. Adversarial defense summary.</b></p>
+
+</div>
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology | Reason |
-|---|---|---|
-| Frontend | React.js (PWA + Web Dashboard) | One codebase for both interfaces; largest community; CRA sets up PWA in one command |
-| Backend | Python + FastAPI | Beginner-friendly, auto Swagger docs at /docs, async support for trigger polling |
-| Database | Firebase Firestore | Zero setup, real-time sync, free tier (50k reads/day), no SQL required |
-| Auth | Firebase Auth | OTP-based mobile login, free |
-| ML | scikit-learn + xgboost | Industry standard, best documentation, beginner accessible |
-| Payments | Razorpay (test mode) | Free sandbox, UPI support |
-| Hosting | Vercel (frontend) + Render.com (backend) | Both free tier, zero DevOps overhead |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Layer</th>
+      <th style="padding: 10px;">Technology</th>
+      <th style="padding: 10px;">Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Frontend</td>
+      <td style="padding: 10px;">React.js (PWA + Web Dashboard)</td>
+      <td style="padding: 10px;">One codebase for both interfaces; largest community; CRA sets up PWA in one command</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Backend</td>
+      <td style="padding: 10px;">Python + FastAPI</td>
+      <td style="padding: 10px;">Beginner-friendly, auto Swagger docs at /docs, async support for trigger polling</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Database</td>
+      <td style="padding: 10px;">Firebase Firestore</td>
+      <td style="padding: 10px;">Zero setup, real-time sync, free tier (50k reads/day), no SQL required</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Auth</td>
+      <td style="padding: 10px;">Firebase Auth</td>
+      <td style="padding: 10px;">OTP-based mobile login, free</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">ML</td>
+      <td style="padding: 10px;">scikit-learn + xgboost</td>
+      <td style="padding: 10px;">Industry standard, best documentation, beginner accessible</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Payments</td>
+      <td style="padding: 10px;">Razorpay (test mode)</td>
+      <td style="padding: 10px;">Free sandbox, UPI support</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Hosting</td>
+      <td style="padding: 10px;">Vercel (frontend) + Render.com (backend)</td>
+      <td style="padding: 10px;">Both free tier, zero DevOps overhead</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 10. Technology stack and rationale.</b></p>
+
+</div>
 
 **Total infrastructure cost: ₹0**
 
 ### Integrations
 
-| Tool | Purpose | Cost |
-|---|---|---|
-| OpenWeatherMap | Rainfall, temperature, weather alerts | Free |
-| AQICN | Real-time AQI by city/pincode | Free |
-| Google Maps / OpenStreetMap | 2km radius zone check, flood layer | Free |
-| Razorpay | Payout sandbox | Free |
-| React Router | PWA and Dashboard navigation | — |
-| Recharts | Insurer dashboard analytics charts | — |
-| Lucide React | High-fidelity iconography | — |
-| Firebase Cloud Messaging | Push notifications to rider PWA | — |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Tool</th>
+      <th style="padding: 10px;">Purpose</th>
+      <th style="padding: 10px;">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">OpenWeatherMap</td>
+      <td style="padding: 10px;">Rainfall, temperature, weather alerts</td>
+      <td style="padding: 10px;">Free</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">AQICN</td>
+      <td style="padding: 10px;">Real-time AQI by city/pincode</td>
+      <td style="padding: 10px;">Free</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Google Maps / OpenStreetMap</td>
+      <td style="padding: 10px;">2km radius zone check, flood layer</td>
+      <td style="padding: 10px;">Free</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Razorpay</td>
+      <td style="padding: 10px;">Payout sandbox</td>
+      <td style="padding: 10px;">Free</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">React Router</td>
+      <td style="padding: 10px;">PWA and Dashboard navigation</td>
+      <td style="padding: 10px;">—</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Recharts</td>
+      <td style="padding: 10px;">Insurer dashboard analytics charts</td>
+      <td style="padding: 10px;">—</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Lucide React</td>
+      <td style="padding: 10px;">High-fidelity iconography</td>
+      <td style="padding: 10px;">—</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Firebase Cloud Messaging</td>
+      <td style="padding: 10px;">Push notifications to rider PWA</td>
+      <td style="padding: 10px;">—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 11. Third-party integrations and cost.</b></p>
+
+</div>
 
 **Simulated in-house (mock FastAPI endpoints):**
 - Platform order completion rate by zone
@@ -500,32 +879,125 @@ Follow this 5-minute walkthrough to experience the full **Coverent** parametric 
 
 ### Assumptions
 
-| Assumption | Detail |
-|---|---|
-| Income verification | Self-declared, cross-checked against earnings screenshot. |
-| Platform Data Sync | Rider eligibility is synced with a mock platform database; 7 active days required for claim activation. |
-| Fraud Verification | Simulated GPS & activity cross-check ensures rider was active in zone during trigger event. |
-| Idempotency | System prevents duplicate payouts for the same trigger event type within a 24-hour window. |
-| Geographic scope | Delhi-NCR, Mumbai, Bengaluru. Tier-2 expansion supported but not demoed. |
-| Platform data | Simulated via mock endpoints for completion rates and outage status. |
-| Payout timeline | Target: within 2 hours of trigger (sandbox mode). |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Assumption</th>
+      <th style="padding: 10px;">Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Income verification</td>
+      <td style="padding: 10px;">Self-declared, cross-checked against earnings screenshot.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Platform Data Sync</td>
+      <td style="padding: 10px;">Rider eligibility is synced with a mock platform database; 7 active days required for claim activation.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Fraud Verification</td>
+      <td style="padding: 10px;">Simulated GPS &amp; activity cross-check ensures rider was active in zone during trigger event.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Idempotency</td>
+      <td style="padding: 10px;">System prevents duplicate payouts for the same trigger event type within a 24-hour window.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Geographic scope</td>
+      <td style="padding: 10px;">Delhi-NCR, Mumbai, Bengaluru. Tier-2 expansion supported but not demoed.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Platform data</td>
+      <td style="padding: 10px;">Simulated via mock endpoints for completion rates and outage status.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Payout timeline</td>
+      <td style="padding: 10px;">Target: within 2 hours of trigger (sandbox mode).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 12. Project assumptions.</b></p>
+
+</div>
 
 ### Out of Scope
 
-| Excluded | Reason |
-|---|---|
-| Vehicle repair / health / accident coverage | Violates constraint — income loss only |
-| Monthly or annual pricing | Violates constraint — weekly only |
-| Food delivery / e-commerce riders | Outside Q-Commerce persona scope |
-| Manual claim filing | Defeats parametric insurance design |
-| Continuous GPS tracking | Privacy concern — last-ping validation only |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Excluded</th>
+      <th style="padding: 10px;">Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Vehicle repair / health / accident coverage</td>
+      <td style="padding: 10px;">Violates constraint — income loss only</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Monthly or annual pricing</td>
+      <td style="padding: 10px;">Violates constraint — weekly only</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Food delivery / e-commerce riders</td>
+      <td style="padding: 10px;">Outside Q-Commerce persona scope</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Manual claim filing</td>
+      <td style="padding: 10px;">Defeats parametric insurance design</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Continuous GPS tracking</td>
+      <td style="padding: 10px;">Privacy concern — last-ping validation only</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 13. Out-of-scope items and rationale.</b></p>
+
+</div>
 
 ### Future Scope
 
-| Area | Detail |
-|---|---|
-| Platform APIs | Direct integration replacing all mock endpoints |
-| Compliance | IRDAI regulatory framework for commercial launch |
-| Persona Expansion | Food delivery and e-commerce rider coverage |
-| Language Support | Hindi, Tamil, Telugu on rider PWA |
-| Income Verification | Aadhaar-based verification via DigiLocker API |
+<div align="center">
+
+<table width="100%" style="text-align: center; border-collapse: collapse;">
+  <thead>
+    <tr style="border-bottom: 2px solid #ccc;">
+      <th style="padding: 10px;">Area</th>
+      <th style="padding: 10px;">Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Platform APIs</td>
+      <td style="padding: 10px;">Direct integration replacing all mock endpoints</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Compliance</td>
+      <td style="padding: 10px;">IRDAI regulatory framework for commercial launch</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Persona Expansion</td>
+      <td style="padding: 10px;">Food delivery and e-commerce rider coverage</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Language Support</td>
+      <td style="padding: 10px;">Hindi, Tamil, Telugu on rider PWA</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+      <td style="padding: 10px;">Income Verification</td>
+      <td style="padding: 10px;">Aadhaar-based verification via DigiLocker API</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top: 10px;"><b>Table 14. Future scope items.</b></p>
+
+</div>
